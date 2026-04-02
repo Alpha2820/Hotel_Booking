@@ -5,6 +5,7 @@ A full-stack web application for hotel room bookings, featuring user authenticat
 ## 🚀 Features
 
 ### For Users
+
 - **Browse Hotels & Rooms**: Explore available hotels and room types with detailed information
 - **Secure Authentication**: User registration and login via Clerk
 - **Room Booking**: Book rooms with date selection and guest count
@@ -13,6 +14,7 @@ A full-stack web application for hotel room bookings, featuring user authenticat
 - **Responsive Design**: Mobile-friendly interface built with Tailwind CSS
 
 ### For Hotel Owners
+
 - **Hotel Registration**: Register and manage hotel properties
 - **Room Management**: Add, list, and manage room inventory
 - **Dashboard**: Owner dashboard for business insights
@@ -21,6 +23,7 @@ A full-stack web application for hotel room bookings, featuring user authenticat
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - **React 19** - Modern React with hooks and concurrent features
 - **Vite** - Fast build tool and development server
 - **Tailwind CSS** - Utility-first CSS framework
@@ -30,6 +33,7 @@ A full-stack web application for hotel room bookings, featuring user authenticat
 - **React Hot Toast** - Toast notifications
 
 ### Backend
+
 - **Node.js** - JavaScript runtime
 - **Express.js** - Web application framework
 - **MongoDB** - NoSQL database with Mongoose ODM
@@ -66,6 +70,7 @@ Hotel_Booking/
 ## 🔧 Installation & Setup
 
 ### Prerequisites
+
 - Node.js (v16 or higher)
 - MongoDB database
 - Clerk account for authentication
@@ -75,16 +80,19 @@ Hotel_Booking/
 ### Backend Setup
 
 1. Navigate to the server directory:
+
    ```bash
    cd server
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Create a `.env` file in the server directory with the following variables:
+
    ```env
    PORT=3000
    MONGODB_URI=your_mongodb_connection_string
@@ -106,16 +114,19 @@ Hotel_Booking/
 ### Frontend Setup
 
 1. Navigate to the client directory:
+
    ```bash
    cd client
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Create a `.env` file in the client directory:
+
    ```env
    VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
    VITE_BACKEND_URL=http://localhost:3000
@@ -139,22 +150,26 @@ Hotel_Booking/
 ## 📡 API Endpoints
 
 ### User Routes
+
 - `POST /api/user/register` - User registration
 - `POST /api/user/login` - User login
 - `GET /api/user/profile` - Get user profile
 
 ### Hotel Routes
+
 - `GET /api/hotels` - Get all hotels
 - `POST /api/hotels` - Create new hotel (owner only)
 - `GET /api/hotels/:id` - Get hotel details
 
 ### Room Routes
+
 - `GET /api/rooms` - Get all rooms
 - `POST /api/rooms` - Add new room (owner only)
 - `GET /api/rooms/:id` - Get room details
 - `PUT /api/rooms/:id` - Update room (owner only)
 
 ### Booking Routes
+
 - `POST /api/bookings` - Create new booking
 - `GET /api/bookings/user` - Get user's bookings
 - `PUT /api/bookings/:id/cancel` - Cancel booking
@@ -162,6 +177,7 @@ Hotel_Booking/
 ## 🔐 Authentication
 
 The application uses Clerk for authentication, providing:
+
 - User registration and login
 - Secure session management
 - User profile management
@@ -170,6 +186,7 @@ The application uses Clerk for authentication, providing:
 ## 💳 Payment Integration
 
 Stripe is integrated for secure payment processing:
+
 - Card payments
 - Payment confirmation
 - Webhook handling for payment status updates
@@ -177,6 +194,7 @@ Stripe is integrated for secure payment processing:
 ## 🖼️ Image Management
 
 Cloudinary is used for image storage and optimization:
+
 - Room photo uploads
 - Image resizing and optimization
 - Secure image URLs
@@ -184,6 +202,7 @@ Cloudinary is used for image storage and optimization:
 ## 📧 Email Services
 
 Nodemailer handles email communications:
+
 - Booking confirmations
 - Payment receipts
 - Owner notifications
